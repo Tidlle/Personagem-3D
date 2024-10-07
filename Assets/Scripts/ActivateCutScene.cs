@@ -5,6 +5,7 @@ using UnityEngine.Playables;
 
 public class ActivateCutScene : MonoBehaviour
 {
+
     [SerializeField] private PlayableDirector playableDirector;
 
     private void OnTriggerEnter(Collider other)
@@ -16,4 +17,5 @@ public class ActivateCutScene : MonoBehaviour
             GetComponent<BoxCollider>().enabled = false;    
         }
     }
+
 }
